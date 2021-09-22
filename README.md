@@ -1,4 +1,4 @@
-# README
+# Chat Application (Rails + React + ActionCable)
 
 <b>####Environment</b>
 
