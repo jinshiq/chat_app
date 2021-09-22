@@ -1,0 +1,22 @@
+import consumer from "./consumer"
+
+const RoomChannel = consumer.subscriptions.create({channel: "RoomChannel", room_id: document.querySelector("head").dataset.roomId}, {
+  connected() {
+		const room_id = document.querySelector("head").dataset.roomId
+		console.log(`Connected to the room_${room_id} channel. (room_chanel.js)`);
+		console.log("room_id=", document.querySelector("head").dataset.roomId);
+    // Called when the subscription is ready for use on the server
+  },
+
+  disconnected() {
+    // Called when the subscription has been terminated by the server
+  },
+
+  received(data) {
+		const room_id = document.querySelector("head").dataset.roomId
+		console.log(`Received data from the room_${room_id} channel. (room_channel.js)`);
+    // Called when there's incoming data on the websocket for this channel
+  }
+});
+
+export default RoomChannel

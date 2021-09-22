@@ -1,0 +1,86 @@
+.room-item {
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.room-info {
+	width: 60%;
+	border-radius: 5px;
+	display: flex;
+  align-items: center; 
+}
+
+.current-room {
+	background-color: #76bdd5;
+  font-weight: 600;	
+}
+
+.not-current-room {
+	background-color: lightgreen; 
+}
+
+.room-input {
+	width: 60%;
+}
+
+.room-name {
+	padding-left: 15px;
+	font-size: 20px;
+}
+
+.room-count {
+	margin-left: auto;
+	margin-right: 15px;
+	color: gray;
+}
+
+.room-join {
+	width: 10%; 
+	margin-left: auto; 
+  text-align: center;
+}
+
+.room-edit {
+	width: 10%; 
+	margin-left: auto; 
+  text-align: center;
+}
+
+.room-delete {
+	width: 10%; 
+	margin-left: auto; 
+  text-align: center;
+}
+
+#message-area {
+	height: 55vh;
+	overflow: auto;
+}
+
+.message-item {
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	width: fit-content;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ 
+.message-item-others {
+  background-color: #e6e6e6;
+	clear: both;
+}
+
+.message-item-me {
+	background-color: lightgreen;
+  float: right;
+	clear: both;
+}
+
+.message-author {
+  font-size: 14px;
+  color: #cc0000;	
+}
+
